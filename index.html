@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Condensed|Fredoka+One" rel="stylesheet">
     <title>Quero Leads</title>
   </head>
   <body>
@@ -10,11 +11,11 @@
     <form class="" action="index.html" method="post">
       <fieldset>
         <label for="nome">Nome:</label>
-        <input type="text" name="nome" placeholder="digite seu nome" maxlength="10" required>
+        <input type="text" name="nome" placeholder="Digite seu nome" maxlength="10" required>
         <label for="email">Email:</label>
         <input type="email" name="email" placeholder="Digite seu e-mail">
         <label for="telefone">Telefone:</label>
-        <input type="tel" name="telefone" placeholder="1140028922">
+        <input type="tel" name="telefone" placeholder="1140028922"  min="10" max="10">
         <label for="estado">Estado</label>
         <select name="estado">
           <option disabled>Selecione</option>
@@ -48,7 +49,7 @@
         </select>
 
         <label for="cep">CEP:</label>
-        <input type="text" name="cep" value="" placeholder="01310-662">
+        <input type="text" name="cep" value="" placeholder="01310-662"  min="8" max="8">
 
         <label for="rua">Rua:</label>
         <input type="text" name="rua" value="" placeholder="Digite sua rua:">
@@ -60,12 +61,12 @@
         <input type="text" name="bairro" value="" placeholder="Digita seu bairro:">
 
         <label for="numero">Número:</label>
-        <input type="number" name="numero" value="" placeholder="Digite seu número:">
+        <input class="numero" type="number" name="numero" value="" placeholder="Digite seu número:"  min="1" max="1000">
 
         <label for="complemento">Complemento:</label>
         <input type="text" name="complemento" value="" placeholder="Digite seu complemento:">
 
-        <label for="genero">Genero:</label>
+        <label for="genero">Gênero:</label>
         <input type="radio" name="genero" value="masculino"> Masculino
 
         <input type="radio" name="genero" value="feminino"> Feminino
@@ -73,11 +74,13 @@
 
         <label for="gostos">Selecione os itens que você mais gosta:</label>
 
-        <input type="checkbox" name="musica" value="musica">Música
-        <input type="checkbox" name="teatro" value="teatro">Teatro
-        <input type="checkbox" name="esporte" value="esporte">Esporte
-        <label for="data">Data de Nascimento:</label
+        <input class="gostos" type="checkbox" name="musica" value="musica">Música
+        <input class="gostos" type="checkbox" name="teatro" value="teatro">Teatro
+        <input class="gostos" type="checkbox" name="esporte" value="esporte">Esporte
+
+        <label for="data">Data de Nascimento:</label>
         <input type="date" name="data" value="">
+
         <label for="comentario">Comente o que você achou disso tudo:</label>
         <textarea name="comentario" rows="8" cols="80"></textarea>
         <input type="submit" name="enviar" value="enviar">

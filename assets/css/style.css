@@ -1,7 +1,30 @@
 body{
-  background-color: #f1f1f1;
+  background-color: #ADD8E6;
+  margin: 0px;
+  padding: 0px;
 }
 
 h1{
-  color:blue;
+  color:#7B68EE;
+  margin-left: 498px;
+  font-family: 'Fredoka One', cursive;
+}
+fieldset{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+label{
+  font-family: 'Cabin Condensed', sans-serif;
+}
+input{
+  padding-right: 261px;
+}
+.numero{
+  padding-right: 0px;
+}
+.gostos{
+  display: flex;
+  justify-content: right;
+  
 }
